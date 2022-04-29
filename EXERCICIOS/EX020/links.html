@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  # id
+            . class
+            : pseudo class
+            :: pseudo element
+            > children
+        */
+        body{
+            background-image: linear-gradient(to right,lightblue,white);
+        }
+        a{
+            color:red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:visited{
+            color:darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-size: larger;
+            color:gold;
+        }
+        a:active{
+            color:black;
+        }
+        a::after{
+            content:'[link]';
+            font-weight: normal;
+            color:blueviolet;
+        }
+        .especial{
+            color:black;
+            background-color: aquamarine;
+        }
+        .especial::before{
+            content:'**importante**';
+            background-color: cadetblue;
+        }
+        li::first-letter{
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/jharbes" target="_blank" rel="noopener noreferrer">Repositório GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jorge-harbes-0664161a7/" target="_blank" rel="noopener noreferrer" class="especial">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/channel/UCpW5MLpCnRBXVL3-Voh5cMg" target="_blank" rel="noopener noreferrer">Canal do YouTube</a></li>
+    </ul>
+</body>
+</html>
