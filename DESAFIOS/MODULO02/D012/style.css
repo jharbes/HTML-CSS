@@ -6,6 +6,11 @@
     margin: 0px;
     padding: 0px;
     font-family: var(--fonte-body);
+    font-size: 1em;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.363);
+}
+body,html{
+    min-height: 100vh;
 }
 :root{
     --cor00: white;
@@ -30,7 +35,7 @@ header{
 header h1{
     font-family: var(--fonte-titulo);
     margin: 0px;
-    font-size: 100px;
+    font-size: 10vw;
     padding-top: 50px;
     font-variant: small-caps;
 }
@@ -49,7 +54,7 @@ a:hover{
 }
 main{
     font-family: 'Sriracha',cursive;
-    font-size: 40px;
+    font-size: 3vw;
 }
 section{
     padding-top: 10vh;
@@ -60,19 +65,25 @@ section{
 section#background1{
     background-image: url(imagens/background001.jpg);
     background-attachment: fixed;
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.411);
 }
 section#background2{
     background-image: url(imagens/background002.jpg);
     background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.411);
 }
 aside.fundopreto{
     background-color: rgba(0, 0, 0, 0.568);
     color: white;
-    width: 500px;
-    padding: 100px;
+    width: max-content;
+    padding: 50px;
+    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.363);
 }
 aside.fundobranco{
-    padding: 100px;
+    padding: 50px;
 }
 footer{
     font-family: var(--fonte-head);
