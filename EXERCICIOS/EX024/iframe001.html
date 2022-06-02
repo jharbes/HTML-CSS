@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iFrame</title>
+    <style>
+        iframe{
+            height: 600px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso do iFrame</h1>
+
+    <!-- Tamanho padrão de um iFrame = 300x250 px largura x altura -->
+
+    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" width="500"></iframe> para aprender a programar.</p>
+
+    <p>O site do <iframe src="https://www.google.com.br" frameborder="0" style="width: 200px; height: 200px;">
+        <a href="https://www.google.com.br" target="_blank" rel="noopener">Google</a>
+    </iframe> não abre por medidas de segurança, isso é falado sobre no vídeo-aula.</p>
+
+    <!--
+        Utiliza-se links na área interna do tag <iframe> com o link do site em questão para no caso do navegador do usuário não possuir compatibilidade com iframe ele mostrará essa área interna da tag, e aí ao mostrar vai aparecer o link para a página mantendo o site funcional.
+    -->
+
+    <p>O repositório do Guanabara
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe>
+        também é muito legal.
+    </p>
+
+</body>
+</html>
