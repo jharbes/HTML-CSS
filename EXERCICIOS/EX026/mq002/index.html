@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- A media "all" serve pra salvar as configurações globais, as que se repetiriam em todas as css de modo a simplificar o código. -->
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+
+    <!-- Abaixo vemos as configurações separadas para retrato e paisagem, como por exemplo o celular em pé e deitado. Nessa caso informamos o media type(screen) e o media feature(portrait ou landscape). media types não usam parênteses, media features são indicados em parênteses -->
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+    <title>Media Query</title>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+</html>
