@@ -2,3 +2,86 @@
 
 /* Todas as demais mídias */
 
+/* Typical Devices Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print{
+
+}
+
+/* Não utilizaremos os dois abaixo pois a media para aparelhos pequenos já será a default (mobile first)
+
+@media screen and (max-width: 600px){
+
+}
+
+@media screen and (min-width: 600px and max-width:767px){
+
+}
+ */
+
+ @media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+ }
+
+ @media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display:none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+ }
+
+ @media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 60%;
+    }
+    img#phone{display: none;}
+    img#tablet{display:none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+ }
+
+ @media print{ /* IMPRESSAO */
+    body{
+        background-image: url(../imagens/back-print.jpg); /* desnecessário, pois não há impressão de background */
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+    main{
+        border: 2px solid black;
+        width: 90%;
+    }
+    img#phone{display: none;}
+    img#tablet{display:none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+
+    main::after{
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+ }
+
