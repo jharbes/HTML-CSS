@@ -2,7 +2,7 @@
 
 # HTML-CSS
 
-<strong>Curso de HTML5 e CSS3 do CursoemVideo</strong>
+<strong>Curso de HTML5 e CSS3 do CursoemVideo, cod3rcursos/Udemy e CFBCursos</strong>
 
 HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software. É a quinta versão da linguagem HTML.
 
