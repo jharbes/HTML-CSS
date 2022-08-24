@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
     <title>Media Query</title>
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="chamarMenu()">
+            menu
+            </span>
         <menu>
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -28,5 +32,11 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae mollitia alias harum commodi. Cum distinctio autem provident fugit quae ullam. Hic iure voluptatum culpa sequi minima explicabo voluptatibus assumenda odit deleniti numquam delectus ipsam ex nesciunt voluptas tempore dolorum laboriosam, beatae optio eum rerum molestias error aliquam! Dignissimos ipsam distinctio alias expedita eum culpa voluptatum non fuga quo, temporibus, cumque officiis asperiores eos ratione praesentium dolorum consequatur dolor vel ducimus. Explicabo maiores voluptates corporis cumque quo ullam accusamus nemo sit totam eligendi molestiae non fuga ut nulla perferendis quos deserunt, eaque pariatur modi? Id, praesentium animi labore soluta aperiam assumenda?</p>
         </article>
     </main>
+    <script>
+        menu=document.getElementsByTagName("menu")[0]
+        function chamarMenu(){
+            menu.style.display=='block'?menu.style.display='none':menu.style.display='block'
+        }
+    </script>
 </body>
 </html>
